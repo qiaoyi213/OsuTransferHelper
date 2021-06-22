@@ -31,13 +31,14 @@ namespace WindowsFormsApp1
         {
             this.execBtn = new System.Windows.Forms.Button();
             this.pathCompress = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.fileSelect = new System.Windows.Forms.Button();
             this.pathText = new System.Windows.Forms.TextBox();
             this.pathSelect = new System.Windows.Forms.Button();
             this.pathSong = new System.Windows.Forms.Label();
             this.fileText = new System.Windows.Forms.TextBox();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
+            this.execText = new System.Windows.Forms.Label();
+            this.logText = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // execBtn
@@ -62,13 +63,6 @@ namespace WindowsFormsApp1
             this.pathCompress.Size = new System.Drawing.Size(104, 19);
             this.pathCompress.TabIndex = 5;
             this.pathCompress.Text = "壓縮檔路徑";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(68, 154);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(895, 22);
-            this.textBox2.TabIndex = 6;
             // 
             // fileSelect
             // 
@@ -102,11 +96,11 @@ namespace WindowsFormsApp1
             // 
             this.pathSong.AutoSize = true;
             this.pathSong.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.pathSong.Location = new System.Drawing.Point(64, 81);
+            this.pathSong.Location = new System.Drawing.Point(93, 80);
             this.pathSong.Name = "pathSong";
-            this.pathSong.Size = new System.Drawing.Size(120, 19);
+            this.pathSong.Size = new System.Drawing.Size(85, 19);
             this.pathSong.TabIndex = 10;
-            this.pathSong.Text = "Osu!歌曲路徑";
+            this.pathSong.Text = "輸出路徑";
             // 
             // fileText
             // 
@@ -116,12 +110,35 @@ namespace WindowsFormsApp1
             this.fileText.TabIndex = 11;
             this.fileText.TextChanged += new System.EventHandler(this.file_TextChanged);
             // 
-            // progressBar1
+            // progressBar
             // 
-            this.progressBar1.Location = new System.Drawing.Point(184, 117);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(779, 23);
-            this.progressBar1.TabIndex = 12;
+            this.progressBar.Location = new System.Drawing.Point(184, 117);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(779, 23);
+            this.progressBar.TabIndex = 12;
+            this.progressBar.Click += new System.EventHandler(this.progressBar_Click);
+            // 
+            // execText
+            // 
+            this.execText.AutoSize = true;
+            this.execText.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.execText.Location = new System.Drawing.Point(93, 119);
+            this.execText.Name = "execText";
+            this.execText.Size = new System.Drawing.Size(85, 19);
+            this.execText.TabIndex = 13;
+            this.execText.Text = "下載進度";
+            // 
+            // logText
+            // 
+            this.logText.Cursor = System.Windows.Forms.Cursors.Default;
+            this.logText.Location = new System.Drawing.Point(59, 146);
+            this.logText.Multiline = true;
+            this.logText.Name = "logText";
+            this.logText.ReadOnly = true;
+            this.logText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.logText.Size = new System.Drawing.Size(904, 386);
+            this.logText.TabIndex = 14;
+            this.logText.TextChanged += new System.EventHandler(this.logText_TextChanged);
             // 
             // Form3
             // 
@@ -129,13 +146,14 @@ namespace WindowsFormsApp1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1106, 606);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.logText);
+            this.Controls.Add(this.execText);
+            this.Controls.Add(this.progressBar);
             this.Controls.Add(this.fileText);
             this.Controls.Add(this.pathSong);
             this.Controls.Add(this.pathSelect);
             this.Controls.Add(this.pathText);
             this.Controls.Add(this.fileSelect);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.pathCompress);
             this.Controls.Add(this.execBtn);
             this.Name = "Form3";
@@ -148,12 +166,13 @@ namespace WindowsFormsApp1
         #endregion
         private System.Windows.Forms.Button execBtn;
         private System.Windows.Forms.Label pathCompress;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button fileSelect;
         private System.Windows.Forms.TextBox pathText;
         private System.Windows.Forms.Button pathSelect;
         private System.Windows.Forms.Label pathSong;
         private System.Windows.Forms.TextBox fileText;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar progressBar;
+        private System.Windows.Forms.Label execText;
+        private System.Windows.Forms.TextBox logText;
     }
 }

@@ -38,6 +38,7 @@ namespace WindowsFormsApp1
             this.fileSelect = new System.Windows.Forms.Button();
             this.pathText = new System.Windows.Forms.TextBox();
             this.progressBar = new System.Windows.Forms.ProgressBar();
+            this.execText = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // pathSelect
@@ -128,6 +129,16 @@ namespace WindowsFormsApp1
             this.progressBar.TabIndex = 10;
             this.progressBar.Click += new System.EventHandler(this.progressBar_Click);
             // 
+            // execText
+            // 
+            this.execText.AutoSize = true;
+            this.execText.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.execText.Location = new System.Drawing.Point(97, 126);
+            this.execText.Name = "execText";
+            this.execText.Size = new System.Drawing.Size(85, 19);
+            this.execText.TabIndex = 11;
+            this.execText.Text = "執行進度";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -135,6 +146,7 @@ namespace WindowsFormsApp1
             this.AutoScroll = true;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1106, 606);
+            this.Controls.Add(this.execText);
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.pathText);
             this.Controls.Add(this.fileSelect);
@@ -162,5 +174,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button fileSelect;
         private System.Windows.Forms.TextBox pathText;
         private System.Windows.Forms.ProgressBar progressBar;
+        private System.Windows.Forms.Label execText;
     }
 }

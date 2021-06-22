@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
 
 namespace WindowsFormsApp1
 {
@@ -25,6 +26,11 @@ namespace WindowsFormsApp1
         {
 
         }
+        private void logText_TextChanged(object sender, EventArgs e)
+        {
+            logText.SelectionLength = logText.TextLength;
+            logText.ScrollToCaret();
+        }
 
         private void fileSelect_Click(object sender, EventArgs e)
         {
@@ -40,12 +46,49 @@ namespace WindowsFormsApp1
         {
             FolderBrowserDialog path = new FolderBrowserDialog();
             path.ShowDialog();
-            pathText.Text = path.SelectedPath;
+            pathText.Text = path.SelectedPath.Replace("\\", "\\\\");
+            if(pathText.Text[pathText.Text.Length-1] != '\\')
+            {
+                pathText.Text += "\\\\";
+            }
+        }
+        private void progressBar_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void execBtn_Click(object sender, EventArgs e)
         {
-
+            System.IO.StreamReader file = new System.IO.StreamReader(@fileText.Text);
+            System.Collections.ArrayList dir = new System.Collections.ArrayList();
+            string line;
+            int numData = 0;
+            logText.Text += "Loading file..." + Environment.NewLine;
+            while ((line = file.ReadLine()) != null)
+            {
+                dir.Add(line);
+                logText.Text += "Loading "+line + Environment.NewLine;
+                numData++;
+                Application.DoEvents();
+            }
+            progressBar.Maximum = numData;
+            logText.Text += "Loading successful!" + Environment.NewLine;
+            logText.Text += "Start Download" + Environment.NewLine;
+            Application.DoEvents();
+            
+            file.Close();
+            foreach(var item in dir)
+            {
+                string url = string.Format("https://beatconnect.io/b/{0}", item);
+                string dwPath = string.Format("{0}{1}.osz", pathText.Text, item);
+                MessageBox.Show(dwPath);
+                //string dwPath = "D:\\asdf.osz";
+                WebClient wc = new WebClient();
+                wc.DownloadFile(url, dwPath);
+                progressBar.Value++;
+            }
         }
+
+        
     }
 }

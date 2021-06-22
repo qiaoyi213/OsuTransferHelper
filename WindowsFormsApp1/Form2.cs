@@ -99,7 +99,6 @@ namespace WindowsFormsApp1
             MessageBox.Show(finishWord, "Finish!");
             fs.Flush();
             fs.Close();
-            
         }
 
         
