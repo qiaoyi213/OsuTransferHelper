@@ -104,5 +104,14 @@
   <ItemGroup>
     <None Include="Resources\iconfinder_1814098_close_no_reject_icon_512px.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\letter-x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
