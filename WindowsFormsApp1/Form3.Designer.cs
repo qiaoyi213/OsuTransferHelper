@@ -58,6 +58,7 @@ namespace WindowsFormsApp1
             // 
             this.pathCompress.AutoSize = true;
             this.pathCompress.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.pathCompress.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.pathCompress.Location = new System.Drawing.Point(74, 39);
             this.pathCompress.Name = "pathCompress";
             this.pathCompress.Size = new System.Drawing.Size(104, 19);
@@ -96,6 +97,7 @@ namespace WindowsFormsApp1
             // 
             this.pathSong.AutoSize = true;
             this.pathSong.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.pathSong.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.pathSong.Location = new System.Drawing.Point(93, 80);
             this.pathSong.Name = "pathSong";
             this.pathSong.Size = new System.Drawing.Size(85, 19);
@@ -122,6 +124,7 @@ namespace WindowsFormsApp1
             // 
             this.execText.AutoSize = true;
             this.execText.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.execText.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.execText.Location = new System.Drawing.Point(93, 119);
             this.execText.Name = "execText";
             this.execText.Size = new System.Drawing.Size(85, 19);
@@ -145,6 +148,7 @@ namespace WindowsFormsApp1
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             this.ClientSize = new System.Drawing.Size(1106, 606);
             this.Controls.Add(this.logText);
             this.Controls.Add(this.execText);

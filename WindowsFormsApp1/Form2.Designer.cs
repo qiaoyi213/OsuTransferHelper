@@ -79,6 +79,7 @@ namespace WindowsFormsApp1
             // 
             this.pathSong.AutoSize = true;
             this.pathSong.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.pathSong.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.pathSong.Location = new System.Drawing.Point(68, 43);
             this.pathSong.Name = "pathSong";
             this.pathSong.Size = new System.Drawing.Size(120, 19);
@@ -97,6 +98,7 @@ namespace WindowsFormsApp1
             // 
             this.pathCompress.AutoSize = true;
             this.pathCompress.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.pathCompress.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.pathCompress.Location = new System.Drawing.Point(40, 87);
             this.pathCompress.Name = "pathCompress";
             this.pathCompress.Size = new System.Drawing.Size(142, 19);
@@ -133,6 +135,7 @@ namespace WindowsFormsApp1
             // 
             this.execText.AutoSize = true;
             this.execText.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.execText.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.execText.Location = new System.Drawing.Point(97, 126);
             this.execText.Name = "execText";
             this.execText.Size = new System.Drawing.Size(85, 19);
@@ -145,6 +148,7 @@ namespace WindowsFormsApp1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
             this.ClientSize = new System.Drawing.Size(1106, 606);
             this.Controls.Add(this.execText);
             this.Controls.Add(this.progressBar);
