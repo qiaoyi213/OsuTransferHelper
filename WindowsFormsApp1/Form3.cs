@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
-
+using System.Threading;
 namespace WindowsFormsApp1
 {
     public partial class Form3 : System.Windows.Forms.Form
@@ -56,9 +56,9 @@ namespace WindowsFormsApp1
         {
 
         }
-
         private void execBtn_Click(object sender, EventArgs e)
         {
+            
             System.IO.StreamReader file = new System.IO.StreamReader(@fileText.Text);
             System.Collections.ArrayList dir = new System.Collections.ArrayList();
             string line;
@@ -77,18 +77,22 @@ namespace WindowsFormsApp1
             Application.DoEvents();
             
             file.Close();
-            foreach(var item in dir)
+            
+            foreach (var item in dir)
             {
                 string url = string.Format("https://beatconnect.io/b/{0}", item);
                 string dwPath = string.Format("{0}{1}.osz", pathText.Text, item);
-                MessageBox.Show(dwPath);
+                //MessageBox.Show(dwPath);
                 //string dwPath = "D:\\asdf.osz";
                 WebClient wc = new WebClient();
+                logText.Text += string.Format("Downloading {0}...{1}", item, Environment.NewLine);
+                Application.DoEvents();
                 wc.DownloadFile(url, dwPath);
+                logText.Text += string.Format("{0} successful download! {1}",item,Environment.NewLine);
+                Application.DoEvents();
                 progressBar.Value++;
             }
+            MessageBox.Show("Download Finished!","Finished !!");
         }
-
-        
     }
 }
