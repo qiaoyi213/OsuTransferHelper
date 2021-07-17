@@ -92,21 +92,7 @@ namespace WindowsFormsApp1
         {
             Close();
         }
-        private void btnMaximized_Click(object sender, EventArgs e)
-        {
-            if(this.WindowState == FormWindowState.Maximized)
-            {
-                this.WindowState = FormWindowState.Normal;
-            }
-            else
-            {
-                this.WindowState = FormWindowState.Maximized;
-            }
-        }
-        private void btnMinimized_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
+        
 
         
     }

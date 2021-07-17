@@ -44,6 +44,8 @@ namespace WindowsFormsApp1
             // execBtn
             // 
             this.execBtn.AutoSize = true;
+            this.execBtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.execBtn.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.execBtn.ForeColor = System.Drawing.SystemColors.ControlText;
             this.execBtn.Location = new System.Drawing.Point(978, 117);
             this.execBtn.Name = "execBtn";
@@ -57,16 +59,18 @@ namespace WindowsFormsApp1
             // pathCompress
             // 
             this.pathCompress.AutoSize = true;
-            this.pathCompress.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.pathCompress.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.pathCompress.Location = new System.Drawing.Point(74, 39);
+            this.pathCompress.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.pathCompress.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pathCompress.Location = new System.Drawing.Point(73, 37);
             this.pathCompress.Name = "pathCompress";
-            this.pathCompress.Size = new System.Drawing.Size(104, 19);
+            this.pathCompress.Size = new System.Drawing.Size(105, 24);
             this.pathCompress.TabIndex = 5;
             this.pathCompress.Text = "壓縮檔路徑";
             // 
             // fileSelect
             // 
+            this.fileSelect.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.fileSelect.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.fileSelect.Location = new System.Drawing.Point(978, 37);
             this.fileSelect.Name = "fileSelect";
             this.fileSelect.Size = new System.Drawing.Size(75, 23);
@@ -85,6 +89,8 @@ namespace WindowsFormsApp1
             // 
             // pathSelect
             // 
+            this.pathSelect.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.pathSelect.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.pathSelect.Location = new System.Drawing.Point(978, 77);
             this.pathSelect.Name = "pathSelect";
             this.pathSelect.Size = new System.Drawing.Size(75, 23);
@@ -96,11 +102,11 @@ namespace WindowsFormsApp1
             // pathSong
             // 
             this.pathSong.AutoSize = true;
-            this.pathSong.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.pathSong.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.pathSong.Location = new System.Drawing.Point(93, 80);
+            this.pathSong.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.pathSong.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pathSong.Location = new System.Drawing.Point(92, 78);
             this.pathSong.Name = "pathSong";
-            this.pathSong.Size = new System.Drawing.Size(85, 19);
+            this.pathSong.Size = new System.Drawing.Size(86, 24);
             this.pathSong.TabIndex = 10;
             this.pathSong.Text = "輸出路徑";
             // 
@@ -123,11 +129,11 @@ namespace WindowsFormsApp1
             // execText
             // 
             this.execText.AutoSize = true;
-            this.execText.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.execText.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.execText.Location = new System.Drawing.Point(93, 119);
+            this.execText.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.execText.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.execText.Location = new System.Drawing.Point(92, 117);
             this.execText.Name = "execText";
-            this.execText.Size = new System.Drawing.Size(85, 19);
+            this.execText.Size = new System.Drawing.Size(86, 24);
             this.execText.TabIndex = 13;
             this.execText.Text = "下載進度";
             // 
@@ -139,7 +145,7 @@ namespace WindowsFormsApp1
             this.logText.Name = "logText";
             this.logText.ReadOnly = true;
             this.logText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.logText.Size = new System.Drawing.Size(904, 386);
+            this.logText.Size = new System.Drawing.Size(994, 386);
             this.logText.TabIndex = 14;
             this.logText.TextChanged += new System.EventHandler(this.logText_TextChanged);
             // 
@@ -148,7 +154,7 @@ namespace WindowsFormsApp1
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1106, 606);
             this.Controls.Add(this.logText);
             this.Controls.Add(this.execText);
