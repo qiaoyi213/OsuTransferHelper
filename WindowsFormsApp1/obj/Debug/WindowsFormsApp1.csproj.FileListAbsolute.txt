@@ -22,3 +22,7 @@ D:\OsuTransferHelper\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.Generate
 D:\OsuTransferHelper\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 D:\OsuTransferHelper\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 D:\OsuTransferHelper\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\OsuTransferHelper\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.manifest
+D:\OsuTransferHelper\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.application
+D:\OsuTransferHelper\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.manifest
+D:\OsuTransferHelper\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.application
