@@ -1,0 +1,19 @@
+D:\OsuTransferHelper\OTHv2\OsuTransferHelper V2\OsuTransferHelper V2\obj\Debug\netcoreapp3.1\OsuTransferHelper V2.csproj.AssemblyReference.cache
+D:\OsuTransferHelper\OTHv2\OsuTransferHelper V2\OsuTransferHelper V2\obj\Debug\netcoreapp3.1\App.g.cs
+D:\OsuTransferHelper\OTHv2\OsuTransferHelper V2\OsuTransferHelper V2\obj\Debug\netcoreapp3.1\OsuTransferHelper V2_MarkupCompile.cache
+D:\OsuTransferHelper\OTHv2\OsuTransferHelper V2\OsuTransferHelper V2\bin\Debug\netcoreapp3.1\OsuTransferHelper V2.exe
+D:\OsuTransferHelper\OTHv2\OsuTransferHelper V2\OsuTransferHelper V2\bin\Debug\netcoreapp3.1\OsuTransferHelper V2.deps.json
+D:\OsuTransferHelper\OTHv2\OsuTransferHelper V2\OsuTransferHelper V2\bin\Debug\netcoreapp3.1\OsuTransferHelper V2.runtimeconfig.json
+D:\OsuTransferHelper\OTHv2\OsuTransferHelper V2\OsuTransferHelper V2\bin\Debug\netcoreapp3.1\OsuTransferHelper V2.runtimeconfig.dev.json
+D:\OsuTransferHelper\OTHv2\OsuTransferHelper V2\OsuTransferHelper V2\bin\Debug\netcoreapp3.1\OsuTransferHelper V2.dll
+D:\OsuTransferHelper\OTHv2\OsuTransferHelper V2\OsuTransferHelper V2\bin\Debug\netcoreapp3.1\OsuTransferHelper V2.pdb
+D:\OsuTransferHelper\OTHv2\OsuTransferHelper V2\OsuTransferHelper V2\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+D:\OsuTransferHelper\OTHv2\OsuTransferHelper V2\OsuTransferHelper V2\obj\Debug\netcoreapp3.1\OsuTransferHelper V2_MarkupCompile.lref
+D:\OsuTransferHelper\OTHv2\OsuTransferHelper V2\OsuTransferHelper V2\obj\Debug\netcoreapp3.1\MainWindow.baml
+D:\OsuTransferHelper\OTHv2\OsuTransferHelper V2\OsuTransferHelper V2\obj\Debug\netcoreapp3.1\OsuTransferHelper V2.g.resources
+D:\OsuTransferHelper\OTHv2\OsuTransferHelper V2\OsuTransferHelper V2\obj\Debug\netcoreapp3.1\OsuTransferHelper V2.AssemblyInfoInputs.cache
+D:\OsuTransferHelper\OTHv2\OsuTransferHelper V2\OsuTransferHelper V2\obj\Debug\netcoreapp3.1\OsuTransferHelper V2.AssemblyInfo.cs
+D:\OsuTransferHelper\OTHv2\OsuTransferHelper V2\OsuTransferHelper V2\obj\Debug\netcoreapp3.1\OsuTransferHelper V2.csproj.CoreCompileInputs.cache
+D:\OsuTransferHelper\OTHv2\OsuTransferHelper V2\OsuTransferHelper V2\obj\Debug\netcoreapp3.1\OsuTransferHelper V2.dll
+D:\OsuTransferHelper\OTHv2\OsuTransferHelper V2\OsuTransferHelper V2\obj\Debug\netcoreapp3.1\OsuTransferHelper V2.pdb
+D:\OsuTransferHelper\OTHv2\OsuTransferHelper V2\OsuTransferHelper V2\obj\Debug\netcoreapp3.1\OsuTransferHelper V2.genruntimeconfig.cache
