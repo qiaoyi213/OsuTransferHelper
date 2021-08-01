@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OsuTransferHelper_V2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="400">
+        Title="MainWindow" Height="400" Width="400">
     <Border Padding="10px">
         <StackPanel>
             <!-- Mode Select Button -->
@@ -14,31 +14,31 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Button Margin="0 0 10 0" Height="30" Grid.Column="0" Content="壓縮模式" />
-                <Button Margin="0 0 10 0" Height="30" Grid.Column="1" Content="解壓模式"/>
+                <Button Margin="0 0 10 0" Height="30" Grid.Column="0" Content="壓縮模式" FontSize="15px"/>
+                <Button Margin="0 0 10 0" Height="30" Grid.Column="1" Content="解壓模式" FontSize="15px" />
             </Grid>
 
-            <TextBlock Text="請選擇歌曲資料夾位置" Height="20" Margin="0 10"/>
+            <TextBlock Text="請選擇歌曲資料夾位置"  Margin="0 10 0 10 " FontSize="20px" FontWeight="Bold"/>
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="4*"/>
                     <ColumnDefinition Width="1*"/>
                 </Grid.ColumnDefinitions>
                 <TextBox Margin="0 0 10 0" Height="20" Grid.Column="0" Text="asasdfasdf"/>
                 <Button Margin="0 0 10 0" Height="20" Grid.Column="1" Content="選擇"/>
             </Grid>
 
-            <TextBlock Text="請選擇壓縮檔輸出位置" Height="20" Margin="0 10"/>
+            <TextBlock Text="請選擇壓縮檔輸出位置" Margin="0 10 0 10 " FontSize="20px" FontWeight="Bold"/>
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="5*"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="1*"/>
                 </Grid.ColumnDefinitions>
                 <TextBox Margin="0 0 10 0" Height="20" Grid.Column="0" Text="asdffasd"/>
                 <Button Margin="0 0 10 0" Height="20" Grid.Column="1" Content="選擇"/>
             </Grid>
 
-            <TextBlock Text="狀態" Height="20" Margin="0 10"/>
+            <TextBlock Text="狀態" Margin="0 10 0 10 " FontSize="20px" FontWeight="Bold"/>
             <ProgressBar Height="20px"/>
 
             <Grid Margin="0 10 0 0">
@@ -54,6 +54,7 @@
                 <Button Margin="5 0 5 0" Height="25" Grid.Column="3" Content="離開"/>
                 <Button Margin="5 0 5 0" Height="25" Grid.Column="4" Content="執行"/>
             </Grid>
+            
             
         </StackPanel>
 
